@@ -1,8 +1,17 @@
 [package]
-name = "rust-template"
-version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+name        = "rust-template"
+version     = "0.1.0"
+description = "Some description here"
+authors     = ["Yakiyo <yakiyo1206@gmail.com>"]
+edition     = "2021"
+license     = "MIT"
+repository  = "https://github.com/Yakiyo/rust-template"
+homepage    = "https://github.com/Yakiyo/rust-template"
 
 [dependencies]
+
+[profile.release]
+panic = 'abort'
+codegen-units = 1
+lto = true
+strip = true
