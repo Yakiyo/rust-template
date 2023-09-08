@@ -1,17 +1,25 @@
 [package]
-name        = "rust-template"
-version     = "0.1.0"
-description = "Some description here"
-authors     = ["Yakiyo <yakiyo1206@gmail.com>"]
-edition     = "2021"
-license     = "MIT"
-repository  = "https://github.com/Yakiyo/rust-template"
-homepage    = "https://github.com/Yakiyo/rust-template"
+name          = "rust-template"
+version       = "0.1.0"
+description   = "Some description here"
+authors       = ["Yakiyo <yakiyo1206@gmail.com>"]
+edition       = "2021"
+license       = "MIT"
+repository    = "https://github.com/Yakiyo/rust-template"
+homepage      = "https://github.com/Yakiyo/rust-template"
 
 [dependencies]
+clap          = { version = "4.4.2", features = ["derive", "env"] }
+clap_complete = "4.4.1"
+atty          = "0.2.14"
+env_logger    = "0.10.0"
+home          = "0.5.5"
+human-panic   = "1.2.0"
+log           = "0.4.20"
+yansi         = "0.5.1"
 
 [profile.release]
-panic = 'abort'
+panic         = 'abort'
 codegen-units = 1
-lto = true
-strip = true
+lto           = true
+strip         = true
