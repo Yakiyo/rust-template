@@ -1,6 +1,6 @@
 [package]
 name          = "rust-template"
-version       = "0.1.0"
+version       = "0.0.0"
 description   = "Some description here"
 authors       = ["Yakiyo <yakiyo1206@gmail.com>"]
 edition       = "2021"
