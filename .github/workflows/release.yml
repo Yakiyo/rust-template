@@ -31,6 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Create draft github release
     steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
     - name: Create the release
       shell: bash
       run: |
