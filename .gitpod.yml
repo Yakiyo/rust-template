@@ -1,0 +1,8 @@
+tasks:
+  - name: Build Task
+    init: cargo build
+vscode:
+  extensions:
+    - tamasfe.even-better-toml
+    - serayuzgur.crates
+    - rust-lang.rust-analyzer
