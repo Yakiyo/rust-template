@@ -125,6 +125,8 @@ jobs:
     needs: [release]
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - name: Mark release as non-draft
         shell: bash
         run: |
